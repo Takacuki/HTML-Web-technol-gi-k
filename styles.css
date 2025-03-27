@@ -1,0 +1,206 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #f4f4f4;
+  color: #333;
+  margin: 20px; 
+  padding: 15px; 
+
+}
+
+.content {
+    border: 2px solid #ccc; 
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  background: #c62828; 
+}
+
+nav ul li {
+  margin: 0;
+  padding: 16px;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.logo-container {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1000;
+}
+
+.logo-container img {
+  width: 150px;  
+  height: auto;
+}
+
+
+.slideshow {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  animation: slideAnimation 12s infinite;
+  opacity: 0;
+}
+
+.slide1 {
+  background-image: url('hoki1.jpg');
+  animation-delay: 0s;
+}
+
+.slide2 {
+  background-image: url('hoki2.jpg');
+  animation-delay: 4s;
+}
+
+.slide3 {
+  background-image: url('hoki3.jpg');
+  animation-delay: 8s;
+}
+
+@keyframes slideAnimation {
+  0% { opacity: 0; }
+  8% { opacity: 1; }
+  25% { opacity: 1; }
+  33% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+section {
+  padding: 32px;
+  margin: 16px 0;
+}
+
+/* Sporttörténet oszlopok */
+.columns {
+  display: flex;
+  justify-content: space-between;
+  text-align: justify;
+  font-style: italic;
+  margin-top: 16px;
+}
+
+.column {
+ position: relative;
+  width: 32%;
+  background: linear-gradient(to bottom, #ffeb3b 50%, rgba(255,235,59,0) 100%);
+  padding: 16px;
+  border: 1px solid transparent;
+  border-image: linear-gradient(to bottom, #c62828 50%, rgba(198,40,40,0) 100%) 1;
+  border-radius: 4px;
+}
+
+.column li {
+ text-align: left;
+}
+
+.submenu {
+   display: flex;
+  justify-content: space-between;
+  text-align: justify;
+  font-style: italic;
+  margin-top: 16px;
+
+}
+
+img {
+  width: 105%;
+  display: block;
+  margin: 0 auto;
+}
+
+.submenu-column {
+  position: relative;
+  width: 32%;
+  background: linear-gradient(to bottom, #ffeb3b 50%, rgba(255,235,59,0) 100%);
+  padding: 16px;
+  border: 1px solid transparent;
+  border-image: linear-gradient(to bottom, #c62828 50%, rgba(198,40,40,0) 100%) 1;
+  border-radius: 4px;
+  text-align: justify;
+  margin: 5px;
+
+}
+
+ol {
+  margin-left: 10px;
+}
+
+a:link {
+            color: #000000;
+		background-color: #c62828;
+        }
+
+        a:visited {
+            color: #ffffff;
+        }
+
+        a:hover {
+            color: #ff6600;
+        }
+
+        a:active {
+            color: #ffff00;
+        }
+
+.kapcsolat-logo-overlay {
+  position: absolute;
+  right: 170px;
+  margin-top: -80px;
+  z-index: 10;
+}
+
+.kapcsolat-logo-overlay img {
+  max-width: 300px;
+  height: auto;
+}
+
+header, footer {
+  text-align: center;
+  background: #c62828;
+  color: #fff;
+  padding: 1.6px 0;
+}
+
+footer p {
+  font-size: 0.9;
+}
+
+
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  text-decoration: none;
+  background: #c62828;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 20px;
+  z-index: 1000;}
