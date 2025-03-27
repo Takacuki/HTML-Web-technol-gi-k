@@ -98,7 +98,6 @@ section {
   margin: 16px 0;
 }
 
-/* Sporttörténet oszlopok */
 .columns {
   display: flex;
   justify-content: space-between;
